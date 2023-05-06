@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти | Food it`s only food</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Food it`s only food</h1>
+        <nav>
+          <ul>
+            <li><a href="index3.html">Меню</a></li>
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li class="active"><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <h2>Зв'яжіться з нами</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Тема повідомлення</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Надіслати</button>
+        </form>
+        <div class="contact-info">
+          <div>
+            <h3>Адреса</h3>
+            <p>проспект Гагарина 1, м. Харків, 79000</p>
+          </div>
+          <div>
+            <h3>Телефон</h3>
+            <p>+380 501 45 92 59</p>
+          </div>
+          <div>
+            <h3>Електронна пошта</h3>
+            <p>yegor1000@restoran.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023,  Food it`s only food</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<style>
+    /* Загальні стилі */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Стилі для хедера */
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff5e14;
+}
+
+/* Стилі для контактів */
+
+.contact {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.contact h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact p {
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact form input[type='text'],
+.contact form input[type='email'],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #333;
+  transition: all 0.3s ease;
+}
+
+.contact form input[type='submit'] {
+  background-color: #ff5e14;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact form input[type='submit']:hover {
+  background-color: #333;
+}
+
+/* Стилі для футера */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  transition: all 0.3s ease
+</style>
